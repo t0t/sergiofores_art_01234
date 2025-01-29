@@ -65,4 +65,4 @@ const Gallery = async () => {
   return gallery;
 };
 
-export default Gallery;
+export { Gallery as default };

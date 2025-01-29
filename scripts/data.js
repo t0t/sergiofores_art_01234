@@ -21,23 +21,6 @@ const loadArtworks = async () => {
   return artworksData;
 };
 
-export const getArtworks = async () => {
-  return await loadArtworks();
-};
-
-export const getArtworkById = async (id) => {
-  try {
-    console.log('Getting artwork with id:', id); // Debug log
-    const artworks = await loadArtworks();
-    const artwork = artworks.find(artwork => artwork.id === parseInt(id));
-    console.log('Found artwork:', artwork); // Debug log
-    return artwork;
-  } catch (error) {
-    console.error('Error getting artwork by id:', error);
-    throw error; // Re-throw to handle in component
-  }
-};
-
 const loadHomeData = async () => {
   if (homeData === null) {
     try {
@@ -49,15 +32,25 @@ const loadHomeData = async () => {
       homeData = data;
     } catch (error) {
       console.error('Error loading home data:', error);
-      homeData = {};
+      homeData = {
+        title: 'Error loading content',
+        content: 'Please try again later'
+      };
       throw error;
     }
   }
   return homeData;
 };
 
+export const getArtworks = async () => {
+  return await loadArtworks();
+};
+
+export const getArtworkById = async (id) => {
+  const artworks = await loadArtworks();
+  return artworks.find(artwork => artwork.id === id);
+};
+
 export const getHomeData = async () => {
   return await loadHomeData();
 };
-
-export { getArtworks, getArtworkById, getHomeData };

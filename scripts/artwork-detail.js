@@ -1,17 +1,17 @@
 import { getArtworkById } from './data.js';
 
-const ArtworkDetail = async (params) => {
+const ArtworkDetail = async (id) => {
   const detail = document.createElement('article');
   detail.className = 'artwork-detail';
 
   try {
-    console.log('ArtworkDetail component params:', params); // Debug log
+    console.log('ArtworkDetail component id:', id); // Debug log
     
-    if (!params || !params.id) {
+    if (!id) {
       throw new Error('No artwork ID provided');
     }
 
-    const artwork = await getArtworkById(params.id);
+    const artwork = await getArtworkById(id);
     console.log('Artwork data received:', artwork); // Debug log
 
     if (!artwork) {
