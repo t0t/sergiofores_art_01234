@@ -3,6 +3,13 @@ import Home from './home.js';
 import Gallery from './gallery.js';
 import ArtworkDetail from './artwork-detail.js';
 
+// Get base URL for GitHub Pages
+const getBaseUrl = () => {
+  return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? ''
+    : '/sergiofores_art_01234';
+};
+
 // Initialize the app
 const initApp = () => {
   const header = Header();
@@ -11,6 +18,12 @@ const initApp = () => {
 
 // Route matching
 const matchRoute = async (pathname) => {
+  // Remove base URL from pathname
+  const baseUrl = getBaseUrl();
+  if (pathname.startsWith(baseUrl)) {
+    pathname = pathname.slice(baseUrl.length);
+  }
+  
   // Normalize the pathname
   pathname = pathname.replace(/^\/+|\/+$/g, '');
   
@@ -40,7 +53,7 @@ const createNotFoundPage = () => {
   notFound.innerHTML = `
     <h1>404</h1>
     <p>Lo sentimos, la página que buscas no existe.</p>
-    <a href="/" data-link>Volver al inicio</a>
+    <a href="${getBaseUrl()}/" data-link>Volver al inicio</a>
   `;
   return notFound;
 };
@@ -49,25 +62,28 @@ const createNotFoundPage = () => {
 const handleNavigation = async () => {
   try {
     const main = document.getElementById('main');
-    const view = await matchRoute(window.location.pathname);
+    if (!main) return;
+
+    const pathname = window.location.pathname;
+    const content = await matchRoute(pathname);
     
-    // Clear main content and append new view
     main.innerHTML = '';
-    main.appendChild(view);
-    
-    // Scroll to top on navigation
+    main.appendChild(content);
+
+    // Update active nav link
+    const navLinks = document.querySelectorAll('[data-link]');
+    navLinks.forEach(link => {
+      if (link.getAttribute('href') === pathname) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+
+    // Scroll to top
     window.scrollTo(0, 0);
   } catch (error) {
-    console.error('Error handling navigation:', error);
-    const errorView = document.createElement('div');
-    errorView.className = 'error-message';
-    errorView.innerHTML = `
-      <h1>Error</h1>
-      <p>Ha ocurrido un error al cargar la página. Por favor, intenta de nuevo.</p>
-      <a href="/" data-link>Volver al inicio</a>
-    `;
-    document.getElementById('main').innerHTML = '';
-    document.getElementById('main').appendChild(errorView);
+    console.error('Navigation error:', error);
   }
 };
 
@@ -76,16 +92,16 @@ document.addEventListener('DOMContentLoaded', () => {
   initApp();
   handleNavigation();
 
-  // Handle link clicks
-  document.addEventListener('click', e => {
-    const link = e.target.closest('[data-link]');
-    if (link) {
+  // Handle navigation links
+  document.body.addEventListener('click', e => {
+    if (e.target.matches('[data-link]')) {
       e.preventDefault();
-      history.pushState(null, '', link.href);
+      const href = e.target.getAttribute('href');
+      window.history.pushState({}, '', href);
       handleNavigation();
     }
   });
 
-  // Handle back/forward
+  // Handle browser back/forward
   window.addEventListener('popstate', handleNavigation);
 });

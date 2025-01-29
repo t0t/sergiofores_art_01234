@@ -1,3 +1,10 @@
+// Get base URL for GitHub Pages
+const getBaseUrl = () => {
+  return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? ''
+    : '/sergiofores_art_01234';
+};
+
 const Header = () => {
   const header = document.createElement('header');
   header.className = 'main-header';
@@ -7,13 +14,13 @@ const Header = () => {
   logoContainer.className = 'logo-container';
   
   const logoLink = document.createElement('a');
-  logoLink.href = '/';
+  logoLink.href = `${getBaseUrl()}/`;
   logoLink.setAttribute('data-link', '');
   logoLink.setAttribute('aria-label', 'Inicio');
   
   const logo = document.createElement('object');
   logo.type = 'image/svg+xml';
-  logo.data = '/assets/logo.svg';
+  logo.data = `${getBaseUrl()}/assets/logo.svg`;
   logo.className = 'logo';
   logo.setAttribute('aria-hidden', 'true');
   logo.setAttribute('role', 'img');
@@ -29,7 +36,7 @@ const Header = () => {
   const createLink = (text, href) => {
     const link = document.createElement('a');
     link.textContent = text;
-    link.href = href;
+    link.href = `${getBaseUrl()}${href}`;
     link.setAttribute('data-link', '');
     link.setAttribute('role', 'menuitem');
     return link;
