@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="40" viewBox="0 0 120 40" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .logo-text { font-family: 'Georgia', serif; fill: currentColor; }
+    .logo-accent { fill: var(--accent-color, #4a90e2); }
+  </style>
+  <g transform="translate(5,28)">
+    <text class="logo-text" font-size="24">
+      <tspan>Sergio</tspan>
+      <tspan x="65" class="logo-accent">F</tspan>
+    </text>
+  </g>
+</svg>

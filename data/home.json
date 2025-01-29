@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "title": "Sergio Fores",
+    "subtitle": "Artista Visual & Pintor",
+    "description": "Explorando la intersección entre el arte tradicional y la expresión contemporánea a través del óleo y técnicas mixtas.",
+    "ctaText": "Ver Obras",
+    "ctaLink": "/gallery",
+    "image": {
+      "src": "/assets/hero-image.jpg",
+      "alt": "Obra destacada en el estudio",
+      "width": 800,
+      "height": 600
+    }
+  },
+  "features": {
+    "title": "Características",
+    "items": [
+      {
+        "icon": "🎨",
+        "title": "Técnica Tradicional",
+        "description": "Dominio de técnicas clásicas de pintura al óleo, respetando la tradición mientras exploro nuevas posibilidades."
+      },
+      {
+        "icon": "🖼️",
+        "title": "Exposiciones",
+        "description": "Participación regular en exposiciones nacionales e internacionales, llevando el arte a nuevos espacios y audiencias."
+      },
+      {
+        "icon": "🎯",
+        "title": "Obras por Encargo",
+        "description": "Creación de obras personalizadas, trabajando en estrecha colaboración con coleccionistas y amantes del arte."
+      },
+      {
+        "icon": "🌟",
+        "title": "Innovación Artística",
+        "description": "Exploración constante de nuevas técnicas y materiales, fusionando lo tradicional con lo contemporáneo."
+      }
+    ]
+  },
+  "meta": {
+    "title": "Sergio Fores - Artista Visual & Pintor",
+    "description": "Portfolio artístico de Sergio Fores, mostrando obras en óleo y técnicas mixtas. Exploración de arte tradicional y contemporáneo."
+  }
+}

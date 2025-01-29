@@ -1,0 +1,124 @@
+{
+  "artworks": [
+    {
+      "id": 1,
+      "title": "Autoocultamiento",
+      "image": "assets/images/oil/autoocultamiento.png",
+      "technique": "Óleo sobre lienzo",
+      "dimensions": "100 x 120 cm",
+      "year": "2024",
+      "description": "Una exploración visual de la dualidad entre la revelación y el ocultamiento. Esta obra juega con capas superpuestas que sugieren la complejidad de la identidad personal, donde formas abstractas emergen y se desvanecen en un diálogo constante entre luz y sombra.",
+      "details": "La obra utiliza una paleta cromática que transita entre tonos cálidos y fríos, creando una tensión visual que refuerza el concepto de dualidad. Las texturas trabajadas en capas sucesivas generan profundidad y misterio.",
+      "exhibition": "Exposición Individual 'Metamorfosis', Galería Arte Contemporáneo, Madrid",
+      "tags": ["abstracto", "identidad", "dualidad"]
+    },
+    {
+      "id": 2,
+      "title": "Beraja",
+      "image": "assets/images/oil/beraja.png",
+      "technique": "Óleo sobre lienzo",
+      "dimensions": "150 x 180 cm",
+      "year": "2023",
+      "description": "Beraja explora la intersección entre lo espiritual y lo material. La obra toma su nombre de un concepto místico y lo traduce en un lenguaje visual contemporáneo, donde la gestualidad y el color crean espacios de contemplación.",
+      "details": "La composición se construye a través de gestos amplios y expresivos, combinados con áreas de color más contenidas. La textura rugosa del óleo crea un diálogo táctil con el espectador.",
+      "exhibition": "Bienal de Arte Contemporáneo 2023",
+      "tags": ["espiritualidad", "abstracción", "misticismo"]
+    },
+    {
+      "id": 3,
+      "title": "Luz",
+      "image": "assets/images/oil/luz2.png",
+      "technique": "Óleo sobre lienzo",
+      "dimensions": "90 x 120 cm",
+      "year": "2024",
+      "description": "Una investigación sobre la naturaleza de la luz y su interacción con el espacio. La obra captura momentos efímeros donde la luz se materializa y se convierte en protagonista de la composición.",
+      "details": "El tratamiento técnico enfatiza la luminosidad a través de veladuras y empastes que crean diferentes niveles de transparencia y opacidad. La obra invita a una contemplación pausada de los fenómenos lumínicos.",
+      "exhibition": "Colección Permanente, Museo de Arte Moderno",
+      "tags": ["luz", "espacio", "contemplación"]
+    },
+    {
+      "id": 4,
+      "title": "Mente Acústica Literal",
+      "image": "assets/images/oil/menteacusticaliteral1.png",
+      "technique": "Óleo sobre lienzo",
+      "dimensions": "130 x 160 cm",
+      "year": "2023",
+      "description": "Una interpretación visual de la sinestesia entre sonido y forma. La obra explora cómo los patrones acústicos pueden manifestarse en el plano visual, creando una experiencia multisensorial.",
+      "details": "La composición se estructura en base a ritmos visuales que emulan patrones sonoros. El uso del color y la forma sugiere diferentes tonalidades y frecuencias acústicas.",
+      "exhibition": "Festival de Arte y Sonido 2023",
+      "tags": ["sinestesia", "sonido", "abstracción"]
+    },
+    {
+      "id": 5,
+      "title": "Proceso I",
+      "image": "assets/images/oil/2911a.png",
+      "technique": "Óleo sobre lienzo",
+      "dimensions": "100 x 100 cm",
+      "year": "2023",
+      "description": "Primera parte de una serie que explora la transformación y el cambio. La obra documenta visualmente las etapas de un proceso creativo, donde cada capa de pintura revela una nueva dimensión de significado.",
+      "details": "El trabajo con capas sucesivas de pintura crea una arqueología visual que invita al espectador a descubrir diferentes niveles de lectura. La textura y el color se utilizan como elementos narrativos.",
+      "exhibition": "Trienal de Arte Procesual",
+      "tags": ["proceso", "transformación", "capas"]
+    },
+    {
+      "id": 6,
+      "title": "Proceso II",
+      "image": "assets/images/oil/proceso2.png",
+      "technique": "Óleo sobre lienzo",
+      "dimensions": "100 x 100 cm",
+      "year": "2023",
+      "description": "Segunda parte de la serie Proceso. Esta obra profundiza en la evolución de las formas y el color, estableciendo un diálogo con la primera pieza de la serie mientras explora nuevas direcciones.",
+      "details": "La obra mantiene elementos de continuidad con Proceso I mientras introduce nuevas variables cromáticas y compositivas. La tensión entre continuidad y cambio es central en la pieza.",
+      "exhibition": "Trienal de Arte Procesual",
+      "tags": ["proceso", "evolución", "serie"]
+    },
+    {
+      "id": 7,
+      "title": "Proceso III",
+      "image": "assets/images/oil/proceso3.png",
+      "technique": "Óleo sobre lienzo",
+      "dimensions": "100 x 100 cm",
+      "year": "2023",
+      "description": "Culminación de la serie Proceso. Esta obra representa la síntesis de los elementos explorados en las piezas anteriores, llevando la investigación visual a su conclusión.",
+      "details": "La pieza integra y transforma elementos de las obras anteriores de la serie, creando una nueva totalidad que refleja el camino recorrido mientras sugiere nuevas posibilidades.",
+      "exhibition": "Trienal de Arte Procesual",
+      "tags": ["proceso", "síntesis", "conclusión"]
+    },
+    {
+      "id": 8,
+      "title": "Shejina",
+      "image": "assets/images/oil/shejina.png",
+      "technique": "Óleo sobre lienzo",
+      "dimensions": "140 x 170 cm",
+      "year": "2024",
+      "description": "Una interpretación contemporánea del concepto místico de la Shejina. La obra explora la presencia divina en lo cotidiano a través de un lenguaje abstracto que sugiere más que revela.",
+      "details": "El tratamiento técnico combina áreas de gran sutileza con momentos de intensidad gestual. La obra busca crear un espacio de contemplación que invite a la experiencia trascendente.",
+      "exhibition": "Exposición 'Arte y Espiritualidad Contemporánea'",
+      "tags": ["misticismo", "presencia", "contemplación"]
+    },
+    {
+      "id": 9,
+      "title": "Tres",
+      "image": "assets/images/oil/tres1.png",
+      "technique": "Óleo sobre lienzo",
+      "dimensions": "110 x 130 cm",
+      "year": "2024",
+      "description": "Una exploración de la tríada como principio organizador del espacio pictórico. La obra juega con la tensión entre unidad y multiplicidad, creando un equilibrio dinámico entre tres elementos principales.",
+      "details": "La composición se estructura en torno al número tres como principio compositivo y simbólico. El color y la forma crean ritmos que refuerzan esta estructura tripartita.",
+      "exhibition": "Exposición Colectiva 'Números Sagrados'",
+      "tags": ["geometría", "trinidad", "ritmo"]
+    },
+    {
+      "id": 10,
+      "title": "Sin título",
+      "image": "assets/images/oil/291224a.png",
+      "technique": "Óleo sobre lienzo",
+      "dimensions": "120 x 150 cm",
+      "year": "2024",
+      "description": "Una obra que explora la abstracción pura, donde la ausencia de título invita al espectador a encontrar sus propias conexiones y significados. El énfasis está en la experiencia directa de color, forma y textura.",
+      "details": "La obra se construye a través de un diálogo entre gestos espontáneos y áreas más controladas. La ausencia de título refuerza la apertura interpretativa de la pieza.",
+      "exhibition": "Galería de Arte Contemporáneo",
+      "tags": ["abstracción", "interpretación", "experiencia"]
+    }
+  ]
+}
