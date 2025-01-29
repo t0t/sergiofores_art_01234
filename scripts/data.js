@@ -1,11 +1,18 @@
 let artworksData = null;
 let homeData = null;
 
+// Get base URL for GitHub Pages
+const getBaseUrl = () => {
+  return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? ''
+    : '/sergiofores_art_01234';
+};
+
 const loadArtworks = async () => {
   if (artworksData === null) {
     try {
       console.log('Fetching artworks data...'); // Debug log
-      const response = await fetch('../data/artworks.json');
+      const response = await fetch(`${getBaseUrl()}/data/artworks.json`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -24,7 +31,7 @@ const loadArtworks = async () => {
 const loadHomeData = async () => {
   if (homeData === null) {
     try {
-      const response = await fetch('../data/home.json');
+      const response = await fetch(`${getBaseUrl()}/data/home.json`);
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }

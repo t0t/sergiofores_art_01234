@@ -20,6 +20,13 @@ const getScrollbarWidth = () => {
 
 const scrollbarWidth = getScrollbarWidth();
 
+// Get base URL for GitHub Pages
+const getBaseUrl = () => {
+  return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? ''
+    : '/sergiofores_art_01234';
+};
+
 const createModal = () => {
   const modal = document.createElement('div');
   modal.className = 'modal';
@@ -145,7 +152,7 @@ const getModal = () => {
 };
 
 const updateModalContent = (artwork, container) => {
-  const imagePath = artwork.image.startsWith('./') ? artwork.image : `./${artwork.image}`;
+  const imagePath = `${getBaseUrl()}${artwork.image}`;
   
   container.innerHTML = `
     <div class="modal-artwork">

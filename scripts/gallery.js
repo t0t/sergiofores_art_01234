@@ -1,6 +1,13 @@
 import { getArtworks } from './data.js';
 import { openModal } from './modal.js';
 
+// Get base URL for GitHub Pages
+const getBaseUrl = () => {
+  return window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? ''
+    : '/sergiofores_art_01234';
+};
+
 const Gallery = async () => {
   const gallery = document.createElement('div');
   gallery.className = 'gallery';
@@ -20,7 +27,8 @@ const Gallery = async () => {
 
       const img = document.createElement('img');
       img.className = 'artwork-image';
-      img.src = artwork.image.startsWith('./') ? artwork.image : `./${artwork.image}`;
+      // Add base URL to image path
+      img.src = `${getBaseUrl()}${artwork.image}`;
       img.alt = artwork.title;
       img.loading = 'lazy';
 
@@ -65,4 +73,4 @@ const Gallery = async () => {
   return gallery;
 };
 
-export { Gallery as default };
+export default Gallery;

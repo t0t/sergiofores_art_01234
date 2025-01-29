@@ -4,9 +4,9 @@
     "subtitle": "Artista Visual & Pintor",
     "description": "Explorando la intersección entre el arte tradicional y la expresión contemporánea a través del óleo y técnicas mixtas.",
     "ctaText": "Ver Obras",
-    "ctaLink": "./gallery",
+    "ctaLink": "/gallery",
     "image": {
-      "src": "../assets/hero-image.jpg",
+      "src": "/assets/hero-image.jpg",
       "alt": "Obra destacada en el estudio",
       "width": 800,
       "height": 600
@@ -21,19 +21,14 @@
         "description": "Dominio de técnicas clásicas de pintura al óleo, respetando la tradición mientras exploro nuevas posibilidades."
       },
       {
-        "icon": "🖼️",
-        "title": "Exposiciones",
-        "description": "Participación regular en exposiciones nacionales e internacionales, llevando el arte a nuevos espacios y audiencias."
+        "icon": "🌟",
+        "title": "Visión Contemporánea",
+        "description": "Interpretación moderna de temas clásicos, fusionando lo tradicional con perspectivas actuales."
       },
       {
         "icon": "🎯",
-        "title": "Obras por Encargo",
-        "description": "Creación de obras personalizadas, trabajando en estrecha colaboración con coleccionistas y amantes del arte."
-      },
-      {
-        "icon": "🌟",
-        "title": "Innovación Artística",
-        "description": "Exploración constante de nuevas técnicas y materiales, fusionando lo tradicional con lo contemporáneo."
+        "title": "Expresión Personal",
+        "description": "Cada obra refleja una búsqueda personal de significado y conexión con el espectador."
       }
     ]
   },
