@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "Autoocultamiento",
-      "image": "assets/images/oil/autoocultamiento.png",
+      "image": "../assets/images/oil/autoocultamiento.png",
       "technique": "Óleo sobre lienzo",
       "dimensions": "100 x 120 cm",
       "year": "2024",
@@ -15,7 +15,7 @@
     {
       "id": 2,
       "title": "Beraja",
-      "image": "assets/images/oil/beraja.png",
+      "image": "../assets/images/oil/beraja.png",
       "technique": "Óleo sobre lienzo",
       "dimensions": "150 x 180 cm",
       "year": "2023",
@@ -27,7 +27,7 @@
     {
       "id": 3,
       "title": "Luz",
-      "image": "assets/images/oil/luz2.png",
+      "image": "../assets/images/oil/luz2.png",
       "technique": "Óleo sobre lienzo",
       "dimensions": "90 x 120 cm",
       "year": "2024",
@@ -39,7 +39,7 @@
     {
       "id": 4,
       "title": "Mente Acústica Literal",
-      "image": "assets/images/oil/menteacusticaliteral1.png",
+      "image": "../assets/images/oil/menteacusticaliteral1.png",
       "technique": "Óleo sobre lienzo",
       "dimensions": "130 x 160 cm",
       "year": "2023",
@@ -51,7 +51,7 @@
     {
       "id": 5,
       "title": "Proceso I",
-      "image": "assets/images/oil/2911a.png",
+      "image": "../assets/images/oil/2911a.png",
       "technique": "Óleo sobre lienzo",
       "dimensions": "100 x 100 cm",
       "year": "2023",
@@ -63,7 +63,7 @@
     {
       "id": 6,
       "title": "Proceso II",
-      "image": "assets/images/oil/proceso2.png",
+      "image": "../assets/images/oil/proceso2.png",
       "technique": "Óleo sobre lienzo",
       "dimensions": "100 x 100 cm",
       "year": "2023",
@@ -75,7 +75,7 @@
     {
       "id": 7,
       "title": "Proceso III",
-      "image": "assets/images/oil/proceso3.png",
+      "image": "../assets/images/oil/proceso3.png",
       "technique": "Óleo sobre lienzo",
       "dimensions": "100 x 100 cm",
       "year": "2023",
@@ -87,7 +87,7 @@
     {
       "id": 8,
       "title": "Shejina",
-      "image": "assets/images/oil/shejina.png",
+      "image": "../assets/images/oil/shejina.png",
       "technique": "Óleo sobre lienzo",
       "dimensions": "140 x 170 cm",
       "year": "2024",
@@ -99,7 +99,7 @@
     {
       "id": 9,
       "title": "Tres",
-      "image": "assets/images/oil/tres1.png",
+      "image": "../assets/images/oil/tres1.png",
       "technique": "Óleo sobre lienzo",
       "dimensions": "110 x 130 cm",
       "year": "2024",
@@ -111,7 +111,7 @@
     {
       "id": 10,
       "title": "Sin título",
-      "image": "assets/images/oil/291224a.png",
+      "image": "../assets/images/oil/291224a.png",
       "technique": "Óleo sobre lienzo",
       "dimensions": "120 x 150 cm",
       "year": "2024",
