@@ -20,7 +20,7 @@ const Gallery = async () => {
 
       const img = document.createElement('img');
       img.className = 'artwork-image';
-      img.src = artwork.image.startsWith('/') ? artwork.image : `/${artwork.image}`;
+      img.src = artwork.image.startsWith('./') ? artwork.image : `./${artwork.image}`;
       img.alt = artwork.title;
       img.loading = 'lazy';
 

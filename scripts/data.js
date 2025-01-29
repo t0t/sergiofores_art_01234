@@ -5,7 +5,7 @@ const loadArtworks = async () => {
   if (artworksData === null) {
     try {
       console.log('Fetching artworks data...'); // Debug log
-      const response = await fetch('/data/artworks.json');
+      const response = await fetch('./data/artworks.json');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -21,11 +21,11 @@ const loadArtworks = async () => {
   return artworksData;
 };
 
-const getArtworks = async () => {
+export const getArtworks = async () => {
   return await loadArtworks();
 };
 
-const getArtworkById = async (id) => {
+export const getArtworkById = async (id) => {
   try {
     console.log('Getting artwork with id:', id); // Debug log
     const artworks = await loadArtworks();
@@ -41,7 +41,7 @@ const getArtworkById = async (id) => {
 const loadHomeData = async () => {
   if (homeData === null) {
     try {
-      const response = await fetch('/data/home.json');
+      const response = await fetch('./data/home.json');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
@@ -56,7 +56,7 @@ const loadHomeData = async () => {
   return homeData;
 };
 
-const getHomeData = async () => {
+export const getHomeData = async () => {
   return await loadHomeData();
 };
 
