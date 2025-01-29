@@ -4,9 +4,9 @@
     "subtitle": "Artista Visual & Pintor",
     "description": "Explorando la intersección entre el arte tradicional y la expresión contemporánea a través del óleo y técnicas mixtas.",
     "ctaText": "Ver Obras",
-    "ctaLink": "/gallery",
+    "ctaLink": "./gallery",
     "image": {
-      "src": "/assets/hero-image.jpg",
+      "src": "../assets/hero-image.jpg",
       "alt": "Obra destacada en el estudio",
       "width": 800,
       "height": 600
